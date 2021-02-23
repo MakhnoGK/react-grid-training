@@ -1,21 +1,17 @@
 import React from 'react';
+import { Container, Typography } from '@material-ui/core';
+import { TrackerTable } from '.';
 
 const App = () => (
-  <div className="App">
-    <header className="App-header">
-      <p>
-        Edit <code>src/App.tsx</code> and save to reload.
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
-    </header>
-  </div>
+  <Container maxWidth="md">
+    <Typography variant="h3" align="center">
+      COVID-19 Tracker
+    </Typography>
+
+    <TrackerTable />
+  </Container>
 );
+
+App.propTypes = {};
 
 export default App;
